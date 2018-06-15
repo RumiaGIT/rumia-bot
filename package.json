@@ -1,0 +1,21 @@
+{
+  "name": "rumiabot",
+  "version": "0.0.1",
+  "description": "rumia test bot",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/ronnievm/rumiabot.git"
+  },
+  "author": "Rumia#7242",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/ronnievm/rumiabot#readme",
+  "dependencies": {
+    "discord.js": "^11.3.0",
+    "moment": "^2.20.1",
+    "pg": "^7.4.3"
+  }
+}

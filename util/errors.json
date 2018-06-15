@@ -1,0 +1,21 @@
+{
+    "paramMissing": "Command failed; missing parameter(s).",
+    "paramWrong": "Command failed; wrong parameter.",
+    "pruneLimit": "Prune failed; parameter cannot exceed 100.",
+    "userUnknown": "Failed to find user; no mutual servers available.",
+    "userBanPerm": "Insufficient user permissions; lacking: [BAN_MEMBERS].",
+    "botBanPerm": "Insufficient bot permissions; lacking: [BAN_MEMBERS].",
+    "userKickPerm": "Insufficient user permissions; lacking: [KICK_MEMBERS]",
+    "botKickPerm": "Insufficient bot permissions; lacking: [KICK_MEMBERS]",
+    "userRolePerm": "Insufficient user permissions; lacking: [MANAGE_ROLES]",
+    "botRolePerm": "Insufficient bot permissions; lacking: [MANAGE_ROLES]",
+    "userPrunePerm": "Insufficient user permissions; lacking: [MANAGE_MESSAGES]",
+    "botPrunePerm": "Insufficient bot permissions; lacking: [MANAGE_MESSAGES]", 
+    "userUnbannable": "Failed to ban user; user is above me in the role hierarchy.",
+    "userUnkickable": "Failed to kick user; user is above me in the role hierarchy",
+    "commandUnknown": "Failed to list command help; unknown command.",
+    "userNotOwner": "Insufficient user permissions, lacking: [BOT_OWNER]",
+    "muteRoleUnknown": "Failed to find the Muted role.",
+    "userNotMuted": "Failed to unmute user; user is not muted.",
+    "serverUnknown": "Failed to leave server; parameter does not match any known server ID."
+}
