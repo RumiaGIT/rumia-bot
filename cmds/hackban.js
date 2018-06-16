@@ -4,6 +4,7 @@ module.exports.run = async(bot, message, args) => {
     if(!message.member.hasPermission("BAN_MEMBERS")) return message.channel.send(bot.errors.userBanPerm);
     if(!message.guild.member(bot.user.id).hasPermission("BAN_MEMBERS")) return message.channel.send(bot.errors.botBanPerm);
     if(!args[0]) return message.channel.send(bot.errors.paramMissing);
+    if(args[0] == message.author.id) return message.channel.send(bot.errors.userBanSelf);
 
     let successString = "";
     let failString = "";

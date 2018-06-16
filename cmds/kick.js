@@ -7,6 +7,7 @@ module.exports.run = async(bot, message, args) => {
     if(!args[0]) return message.channel.send(bot.errors.paramMissing);
     let target = await message.guild.member(message.mentions.users.first()) || message.guild.member(args[0]);
     if(!target) return message.channel.send(bot.errors.userUnknown);
+    if(target.id == message.author.id) return message.channel.send(bot.errors.userKickSelf);
     if(!target.kickable) return message.channel.send(bot.errors.userUnkickable);
 
     let reason = args.slice(1).join(" ");

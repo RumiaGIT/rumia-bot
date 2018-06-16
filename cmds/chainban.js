@@ -6,6 +6,7 @@ module.exports.run = async(bot, message, args) => {
 
     if(!args[0]) return message.channel.send(bot.errors.paramMissing);
     let target = await bot.users.get(args[0]) || await message.mentions.users.first() || args[0];
+    if(target.id == message.author.id) return message.channel.send(bot.errors.userBanSelf);
 
     let guildArray = await bot.guilds.array();
     let successString = "";
