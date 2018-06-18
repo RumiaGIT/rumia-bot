@@ -7,7 +7,7 @@ const pool = new Pool({
     port: 5432
 });
 
-module.exports.query = async(q) => {
+module.exports.total = async(q) => {
     const result = await pool.query(q);
     return result.rows;
 }
@@ -15,4 +15,8 @@ module.exports.query = async(q) => {
 module.exports.first = async(q) => {
     const result = await pool.query(q);
     return result.rows[0];
+}
+
+module.exports.query = async(q) => {
+    await pool.query(q);
 }
