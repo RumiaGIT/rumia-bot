@@ -19,5 +19,6 @@
     "userNotMuted": "Failed to unmute user: user is not muted.",
     "serverUnknown": "Failed to leave server: parameter does not match any known server ID.",
     "userBanSelf": "Failed to ban user: you cannot ban yourself.",
-    "userKickSelf": "Failed to kick user: you cannot kick yourself."
+    "userKickSelf": "Failed to kick user: you cannot kick yourself.",
+    "userNotWhitelisted": "Insufficient user permissions: you are not present on the relevant whitelist."
 }
