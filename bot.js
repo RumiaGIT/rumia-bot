@@ -6,7 +6,7 @@ const bot = new Discord.Client({disableEveryone: true});
 
 async function setup() {
     bot.db = database;
-    bot.settings = await bot.db.first("SELECT * FROM settings");
+    bot.settings = await bot.db.first('SELECT * FROM settings');
 }
 
 async function run() {
