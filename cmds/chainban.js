@@ -93,9 +93,9 @@ module.exports.run = async(bot, message, args) => {
 
 module.exports.help = {
     name: "chainban",
-    description: "Bans a user from all servers the bot is in. Optionally add a reason.",
+    description: "Bans a user from all servers the bot is in. Optionally add a reason.\nRequires the command's user to be whitelisted.",
     type: "mod",
-    usage: "`prefix chainban @user` | `prefix chainban ID`"
+    usage: "`prefix (chainban | cb)` `(@user | userID)` `[reason]`"
 }
 
 module.exports.conf = {

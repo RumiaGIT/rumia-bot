@@ -14,7 +14,7 @@ module.exports.help = {
     name: "renamebot",
     description: "Changes the account name of the bot.",
     type: "owner",
-    usage: "`prefix renamebot newName`"
+    usage: "`prefix (renamebot | rb)` `name`"
 }
 
 module.exports.conf = {

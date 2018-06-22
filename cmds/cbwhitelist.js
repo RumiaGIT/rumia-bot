@@ -17,9 +17,9 @@ module.exports.run = async(bot, message, args) => {
 
 module.exports.help = {
     name: "cbwhitelist",
-    description: "Returns a list of users with chainbanning permissions.",
+    description: "Returns a list of users with chainban permissions.",
     type: "help",
-    usage: "`prefix cbwhitelist` | `prefix cbwl`"
+    usage: "`prefix (cbwhitelist | cbwl)`"
 }
 
 module.exports.conf = {

@@ -38,7 +38,7 @@ module.exports.help = {
     name: "kick",
     description: "Kicks a user from the server. Optionally add a reason.",
     type: "mod",
-    usage: "`prefix kick @user` | `prefix kick ID You smell.`"
+    usage: "`prefix (kick | k)` `(@user | userID)` `[reason]`"
 }
 
 module.exports.conf = {

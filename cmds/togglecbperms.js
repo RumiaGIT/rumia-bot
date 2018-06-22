@@ -39,7 +39,7 @@ module.exports.help = {
     name: "togglecbperms",
     description: "Toggle's a user's chainban permissions by adding or removing them from the whitelist.",
     type: "owner",
-    usage: "`prefix togglecbperms 106064008154513408` | `prefix tcbp 106064008154513408`"
+    usage: "`prefix (togglecbperms | tcbp)` `(@user | userID)`"
 }
 
 module.exports.conf = {

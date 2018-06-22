@@ -40,7 +40,7 @@ module.exports.help = {
     name: "mute",
     description: "Mutes a user.",
     type: "mod",
-    usage: "`prefix mute @user` | `prefix mute ID`"
+    usage: "`prefix (mute | m)` `(@user | userID)`"
 }
 
 module.exports.conf = {

@@ -36,9 +36,9 @@ module.exports.run = async(bot, message, args) => {
 
 module.exports.help = {
     name: "ban",
-    description: "Bans a user from the server. Optionally add a reason.",
+    description: "Bans a user from the server based on a mention or user ID. Optionally add a reason.",
     type: "mod",
-    usage: "`prefix ban @user` | `prefix ban ID`"
+    usage: "`prefix (ban | b)` `(@user | userID)` `[reason]`"
 }
 
 module.exports.conf = {

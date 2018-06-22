@@ -28,7 +28,7 @@ module.exports.help = {
     name: "unmute",
     description: "Unmutes a user.",
     type: "mod",
-    usage: "`prefix unmute @user` | `prefix unmute ID`"
+    usage: "`prefix (unmute | um)` `(@user | userID)`"
 }
 
 module.exports.conf = {

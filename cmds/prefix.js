@@ -17,7 +17,7 @@ module.exports.help = {
     name: "prefix",
     description: "Changes the bot's prefix.",
     type: "owner",
-    usage: "`prefix prefix newprefix`"
+    usage: "`prefix (prefix | px)` `prefix`"
 }
 
 module.exports.conf = {

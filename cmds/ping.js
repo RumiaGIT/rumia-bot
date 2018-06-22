@@ -15,9 +15,9 @@ module.exports.run = async(bot, message, args) => {
 
 module.exports.help = {
     name: "ping",
-    description: "Checks your ping/latency.",
+    description: "Checks the bot's latency of communicating with Discord's bot API.",
     type: "help",
-    usage: "`prefix ping`"
+    usage: "`prefix (ping | p)`"
 }
 
 module.exports.conf = {

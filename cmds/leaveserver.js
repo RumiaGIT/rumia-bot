@@ -15,7 +15,7 @@ module.exports.help = {
     name: "leaveserver",
     description: "Forces the bot to leave a server.",
     type: "owner",
-    usage: "`prefix leaveserver ID`"
+    usage: "`prefix (leaveserver | lsr)` `serverID`"
 }
 
 module.exports.conf = {

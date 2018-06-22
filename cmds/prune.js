@@ -51,9 +51,9 @@ module.exports.run = async(bot, message, args) => {
 
 module.exports.help = {
     name: "prune",
-    description: "Prunes messages from this channel. Supply a mention or ID to prune only that user's messages.\nDefault history limit is 50 and maxes out at 100.",
+    description: "Prunes messages from this channel. Optionally add an amount. Optionally add a specific user to prune.\nWithout parameters, will prune the last 50 messages by default.",
     type: "mod",
-    usage: "`prefix prune` | `prefix prune 100` | `prefix prune 100 @user`"
+    usage: "`prefix (prune | pr)` `[amount]` `[@user | userID]`"
 }
 
 module.exports.conf = {

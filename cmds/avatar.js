@@ -19,9 +19,9 @@ module.exports.run = async(bot, message, args) => {
 
 module.exports.help = {
     name: "avatar",
-    description: "Returns the avatar of a user.",
+    description: "Returns the avatar of a user based on a mention or user ID.",
     type: "util",
-    usage: "`prefix avatar @user` | `prefix avatar ID`"
+    usage: "`prefix (avatar | av)` `(@user | userID)`"
 }
 
 module.exports.conf = {

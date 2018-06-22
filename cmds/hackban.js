@@ -44,7 +44,7 @@ module.exports.help = {
     name: "hackban",
     description: "Hackbans one or multiple users from the server, even if they aren't present.",
     type: "mod",
-    usage: "`prefix hackban ID`"
+    usage: "`prefix (hackban | hb)` `userID`"
 }
 
 module.exports.conf = {

@@ -58,9 +58,9 @@ module.exports.run = async(bot, message, args) => {
 
 module.exports.help = {
     name: "help",
-    description: "Returns a list of all available commands.",
+    description: "Returns a list of all available commands. Optionally add a command name or alias to return individual command help.",
     type: "help",
-    usage: "`prefix help` | `prefix help command`"
+    usage: "`prefix (help | h)` `[command | alias]`"
 }
 
 module.exports.conf = {

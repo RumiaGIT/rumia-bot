@@ -28,7 +28,7 @@ module.exports.help = {
     name: "userinfo",
     description: "Returns a user's account information.",
     type: "util",
-    usage: "`prefix userinfo` | `prefix userinfo @user` | `prefix userinfo ID`"
+    usage: "`prefix (userinfo | uinfo)` `(@user | userID)`"
 }
 
 module.exports.conf = {

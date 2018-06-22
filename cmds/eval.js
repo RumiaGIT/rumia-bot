@@ -26,7 +26,7 @@ module.exports.help = {
     name: "eval",
     description: "Evaluates JavaScript code, executes it and returns the result.",
     type: "owner",
-    usage: "`prefix eval code`"
+    usage: "`prefix (eval | ev)` `code`"
 }
 
 module.exports.conf = {

@@ -19,7 +19,7 @@ module.exports.help = {
     name: "invite",
     description: "Send a PM to the owner containing an invite link for this bot.",
     type: "owner",
-    usage: "`prefix invite`"
+    usage: "`prefix (invite | inv)`"
 }
 
 module.exports.conf = {

@@ -19,7 +19,7 @@ module.exports.help = {
     name: "guilds",
     description: "Returns a list of all guilds the bot is present in.",
     type: "help",
-    usage: "`prefix guilds`"
+    usage: "`prefix (guilds | g)`"
 }
 
 module.exports.conf = {
