@@ -21,7 +21,7 @@ async function run() {
     bot.on("message", async message => {
         if(message.author.bot) return;
         if(message.channel.type === "dm") {
-            let owner = await bot.users.get(bot.ownerid);
+            let owner = await bot.users.get(bot.settings.ownerid);
             let botPmEmbed = await new Discord.RichEmbed()
             .setAuthor(`PM Source: ${message.author.username}#${message.author.discriminator} | ${message.author.id}`, message.author.displayAvatarURL)
             .addField("Content", `${message.content}`)
