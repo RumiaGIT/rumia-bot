@@ -1,18 +1,18 @@
 {
   "name": "rumiabot",
-  "version": "0.0.1",
-  "description": "rumia test bot",
+  "version": "1.0.0",
+  "description": "A custom-written, JavaScript-based Discord bot for quality of life moderating.",
   "main": "bot.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://bitbucket.org/ronnievm/rumiabot.git"
+    "url": "git+https://github.com/RumiaGIT/RumiaBot"
   },
-  "author": "Rumia#7242",
+  "author": "Rumia#4210",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/ronnievm/rumiabot#readme",
+  "homepage": "https://github.com/RumiaGIT/RumiaBot",
   "dependencies": {
     "discord.js": "^11.3.0",
     "moment": "^2.20.1",
