@@ -19,11 +19,11 @@ module.exports.run = async(bot, message, args) => {
 
         if(found) {
             bot.db.query(`DELETE FROM serverwhitelist WHERE id = '${message.guild.id}'`);
-            toggleEmbed.setDescription(`Removed server ${message.guild.name} from the server advertisement whitelist.`);
+            toggleEmbed.setDescription(`Removed server ${message.guild.id} from the server advertisement whitelist.`);
             message.channel.send(toggleEmbed);
         } else {
             bot.db.query(`INSERT INTO serverwhitelist VALUES ('${message.guild.id}')`);
-            toggleEmbed.setDescription(`Added server ${message.guild.name} to the server advertisement whitelist.`);
+            toggleEmbed.setDescription(`Added server ${message.guild.id} to the server advertisement whitelist.`);
             message.channel.send(toggleEmbed);
         }    
     }
