@@ -36,12 +36,12 @@ module.exports.run = async(bot, message, args) => {
 }
 
 module.exports.help = {
-    name: "togglecbperms",
+    name: "togglecb",
     description: "Toggle's a user's chainban permissions by adding or removing them from the whitelist.",
     type: "owner",
     usage: "`prefix (togglecbperms | tcbp)` `(@user | userID)`"
 }
 
 module.exports.conf = {
-    aliases: ["tcbp"]
+    aliases: ["tcb"]
 }

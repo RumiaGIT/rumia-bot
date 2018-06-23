@@ -32,5 +32,5 @@ module.exports.help = {
 }
 
 module.exports.conf = {
-    aliases: ["uinfo"]
+    aliases: ["ui"]
 }
