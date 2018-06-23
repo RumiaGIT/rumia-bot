@@ -8,19 +8,19 @@ module.exports.run = async(bot, message, args) => {
         await bot.commands.forEach(e => {
             switch (e.help.type) {
                 case "mod": 
-                    listMod += `${e.help.name}`.padEnd(13);
+                    listMod += `${e.help.name}`.padEnd(12);
                     listMod += `[${e.conf.aliases}]\n`;
                     break;
                 case "util":
-                    listUtil += `${e.help.name}`.padEnd(13);
+                    listUtil += `${e.help.name}`.padEnd(12);
                     listUtil += `[${e.conf.aliases}]\n`;
                     break;
                 case "help":
-                    listHelp += `${e.help.name}`.padEnd(13);
+                    listHelp += `${e.help.name}`.padEnd(12);
                     listHelp += `[${e.conf.aliases}]\n`;
                     break;
                 case "owner":
-                    listOwner += `${e.help.name}`.padEnd(13);
+                    listOwner += `${e.help.name}`.padEnd(12);
                     listOwner += `[${e.conf.aliases}]\n`;
                     break;
                 default:
