@@ -16,12 +16,12 @@ module.exports.run = async(bot, message, args) => {
 }
 
 module.exports.help = {
-    name: "cbwhitelist",
-    description: "Returns a list of users with chainban permissions.",
+    name: "serverwhitelist",
+    description: "Returns a list of servers on the advertisement whitelist.",
     type: "help",
-    usage: "`prefix (cbwhitelist | cbwl)`"
+    usage: "`prefix (serverwhitelist | swl)`"
 }
 
 module.exports.conf = {
-    aliases: ["cbwl"]
+    aliases: ["swl"]
 }
