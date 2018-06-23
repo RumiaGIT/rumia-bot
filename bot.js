@@ -32,10 +32,16 @@ async function run() {
             .catch(console.error);
         }
         if(message.content.toLocaleLowerCase().indexOf("discord.gg") !== -1) {
-            // Temporary spaghetti to whitelist a server
-            if(message.guild.id == "235164125196451840") {
-                return;
-            } else {
+            let whitelist = await bot.db.total('SELECT * FROM serverwhitelist');
+            let found = false;
+            for(i = 0; i < whitelist.length; ++i) {
+                if(`${message.guild.id}` == whitelist[i].id) {
+                    found = true;
+                    break;
+                }
+            }
+
+            if(!found) {
                 let owner = await bot.users.get(bot.settings.ownerid);
                 let botPmEmbed = await new Discord.RichEmbed()
                 .setAuthor(`Message source: ${message.author.username}#${message.author.discriminator} | ${message.author.id}`, message.author.displayAvatarURL)
