@@ -1,8 +1,10 @@
 const Discord = require("discord.js");
 
 module.exports.run = async(bot, message, args) => {
-    if(!message.member.hasPermission("KICK_MEMBERS")) return message.channel.send(bot.errors.userKickPerm);
-    if(!message.guild.member(bot.user.id).hasPermission("KICK_MEMBERS")) return message.channel.send(bot.errors.botKickPerm);
+    if(message.author.id !== bot.settings.ownerid) {
+        if(!message.member.hasPermission("KICK_MEMBERS")) return message.channel.send(bot.errors.userKickPerm);
+        if(!message.guild.member(bot.user.id).hasPermission("KICK_MEMBERS")) return message.channel.send(bot.errors.botKickPerm);
+    }
 
     if(!args[0]) return message.channel.send(bot.errors.paramMissing);
     let target = await message.guild.member(message.mentions.users.first()) || message.guild.member(args[0]);

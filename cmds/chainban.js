@@ -12,7 +12,9 @@ module.exports.run = async(bot, message, args) => {
     }
 
     if(whitelisted) {
-        if(!message.guild.member(bot.user.id).hasPermission("BAN_MEMBERS")) return message.channel.send(bot.errors.botBanPerm);
+        if(message.author.id !== bot.settings.ownerid) {
+            if(!message.guild.member(bot.user.id).hasPermission("BAN_MEMBERS")) return message.channel.send(bot.errors.botBanPerm);
+        }
 
         if(!args[0]) return message.channel.send(bot.errors.paramMissing);
         let target = await bot.users.get(args[0]) || await message.mentions.users.first() || args[0];

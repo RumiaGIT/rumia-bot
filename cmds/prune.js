@@ -1,8 +1,10 @@
 const Discord = require("discord.js");
 
 module.exports.run = async(bot, message, args) => {
-    if(!message.member.hasPermission("MANAGE_MESSAGES")) return (bot.errors.userPrunePerm);
-    if(!message.guild.member(bot.user.id).hasPermission("MANAGE_MESSAGES")) return (bot.errors.botPrunePerm);
+    if(message.author.id !== bot.settings.ownerid) {
+        if(!message.member.hasPermission("MANAGE_MESSAGES")) return (bot.errors.userPrunePerm);
+        if(!message.guild.member(bot.user.id).hasPermission("MANAGE_MESSAGES")) return (bot.errors.botPrunePerm);
+    }
 
     let messageHistory;
     let target;

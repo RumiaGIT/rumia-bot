@@ -1,8 +1,10 @@
 const Discord = require("discord.js");
 
 module.exports.run = async(bot, message, args) => {
-    if(!message.member.hasPermission("BAN_MEMBERS")) return message.channel.send(bot.errors.userBanPerm);
-    if(!message.guild.member(bot.user.id).hasPermission("BAN_MEMBERS")) return message.channel.send(bot.errors.botBanPerm);
+    if(message.author.id !== bot.settings.ownerid) {
+        if(!message.member.hasPermission("BAN_MEMBERS")) return message.channel.send(bot.errors.userBanPerm);
+        if(!message.guild.member(bot.user.id).hasPermission("BAN_MEMBERS")) return message.channel.send(bot.errors.botBanPerm);
+    }
     if(!args[0]) return message.channel.send(bot.errors.paramMissing);
     if(args[0] == message.author.id) return message.channel.send(bot.errors.userBanSelf);
 
