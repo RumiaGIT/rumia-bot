@@ -37,7 +37,7 @@ module.exports.run = async(bot, message, args) => {
 
 module.exports.help = {
     name: "togglecb",
-    description: "Toggle's a user's chainban permissions by adding or removing them from the whitelist.",
+    description: "Toggles a user's chainban permissions by adding or removing them from the whitelist.",
     type: "owner",
     usage: "`prefix (togglecbperms | tcbp)` `(@user | userID)`"
 }
