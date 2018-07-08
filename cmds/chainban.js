@@ -21,8 +21,8 @@ module.exports.run = async(bot, message, args) => {
         if(target.id == message.author.id) return message.channel.send(bot.errors.userBanSelf);
 
         let guildArray = await bot.guilds.array();
-        let successString = "";
-        let failString = "";
+        let successString = "\n";
+        let failString = "\n";
 
         let successCount = 0;
         let failCount = 0;
