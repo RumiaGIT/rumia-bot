@@ -8,8 +8,8 @@ module.exports.run = async(bot, message, args) => {
     if(!args[0]) return message.channel.send(bot.errors.paramMissing);
     if(args[0] == message.author.id) return message.channel.send(bot.errors.userBanSelf);
 
-    let successString = "";
-    let failString = "";
+    let successString = "\n";
+    let failString = "\n";
 
     var successCount = 0;
     var failCount = 0;

@@ -6,7 +6,7 @@ module.exports.run = async(bot, message, args) => {
     .setTimestamp();
 
     let guildArray = await bot.guilds.array();
-    let guildList = "";
+    let guildList = "\n";
     for(i = 0; i < guildArray.length; ++i) {
         guildList += `${guildArray[i].name}\n`;
     }

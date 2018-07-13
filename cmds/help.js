@@ -3,7 +3,7 @@ const Discord = require("discord.js");
 module.exports.run = async(bot, message, args) => {
     if(!args[0]) {
         let listMod, listUtil, listHelp, listOwner;
-        listMod = listUtil = listHelp = listOwner = "";
+        listMod = listUtil = listHelp = listOwner = "\n";
 
         await bot.commands.forEach(e => {
             switch (e.help.type) {
@@ -31,10 +31,10 @@ module.exports.run = async(bot, message, args) => {
         let helpListEmbed = await new Discord.RichEmbed()
         .setAuthor("Available commands and aliases")
         .setColor(message.guild.member(message.author).highestRole.color || "#FF0000")
-        .addField("Moderation", `\`\`\`ini\n${listMod}\`\`\``, true)
-        .addField("Utility", `\`\`\`ini\n${listUtil}\`\`\``, true)
-        .addField("Help", `\`\`\`ini\n${listHelp}\`\`\``, true)
-        .addField("Owner", `\`\`\`ini\n${listOwner}\`\`\``, true)
+        .addField("Moderation", `\`\`\`ini${listMod}\`\`\``, true)
+        .addField("Utility", `\`\`\`ini${listUtil}\`\`\``, true)
+        .addField("Help", `\`\`\`ini${listHelp}\`\`\``, true)
+        .addField("Owner", `\`\`\`ini${listOwner}\`\`\``, true)
         .addBlankField(true)
         .addBlankField(true)
         .setTimestamp();
