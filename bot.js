@@ -67,8 +67,7 @@ async function run() {
         .catch(console.error);
     });
     
-    bot.login(bot.settings.token)
-    .catch(console.error);
+    bot.login(bot.settings.token);
 }
 
 setup().then(() => {
