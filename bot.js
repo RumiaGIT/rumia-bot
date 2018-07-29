@@ -15,7 +15,7 @@ async function run() {
         bot.errors = errors;
 
         console.log(`${bot.user.username} is ready!`);
-        require("./util/commandsLoader.js")(bot);
+        //require("./util/commandsLoader.js")(bot);
     });
     
     bot.on("message", async message => {
@@ -55,16 +55,16 @@ async function run() {
                 .catch(console.error);
             }
         }
-        if(!message.content.startsWith(bot.settings.prefix)) return;
+        // if(!message.content.startsWith(bot.settings.prefix)) return;
     
-        let messageArray = message.content.trim().split(/ +/g);
-        let command = messageArray[0].toLocaleLowerCase();
-        let args = messageArray.slice(1);
+        // let messageArray = message.content.trim().split(/ +/g);
+        // let command = messageArray[0].toLocaleLowerCase();
+        // let args = messageArray.slice(1);
     
-        let cmd = await bot.commands.get(command.slice(bot.settings.prefix.length)) || bot.commands.get(bot.aliases.get(command.slice(bot.settings.prefix.length)));
-        if(!cmd) return;
-        if(cmd) cmd.run(bot, message, args)
-        .catch(console.error);
+        // let cmd = await bot.commands.get(command.slice(bot.settings.prefix.length)) || bot.commands.get(bot.aliases.get(command.slice(bot.settings.prefix.length)));
+        // if(!cmd) return;
+        // if(cmd) cmd.run(bot, message, args)
+        // .catch(console.error);
     });
     
     bot.login(bot.settings.token);
