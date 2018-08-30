@@ -26,7 +26,7 @@ module.exports.run = async(bot, message, args) => {
 
 module.exports.help = {
     name: "userinfo",
-    description: "Returns a user's account information.",
+    description: "Returns a user's various account information.",
     type: "util",
     usage: "`prefix (userinfo | uinfo)` `(@user | userID)`"
 }
