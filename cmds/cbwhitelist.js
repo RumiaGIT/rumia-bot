@@ -8,7 +8,7 @@ module.exports.run = async(bot, message, args) => {
 
     let userList = "\n";
     for(i = 0; i < whitelist.length; ++i) {
-        userList += `${whitelist[i].id}\n`;
+        userList += `<@!${whitelist[i].id}>\n`;
     }
     
     userListEmbed.addField(`Users [${whitelist.length}]`, `\`\`\`${userList}\`\`\``);
