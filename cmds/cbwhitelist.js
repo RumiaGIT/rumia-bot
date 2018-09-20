@@ -11,7 +11,7 @@ module.exports.run = async(bot, message, args) => {
         userList += `<@!${whitelist[i].id}>\n`;
     }
     
-    userListEmbed.addField(`Users [${whitelist.length}]`, `\`\`\`${userList}\`\`\``);
+    userListEmbed.addField(`Users [${whitelist.length}]`, `${userList}`);
     message.channel.send(userListEmbed);
 }
 
