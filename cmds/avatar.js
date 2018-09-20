@@ -13,7 +13,6 @@ module.exports.run = async(bot, message, args) => {
     let avatarEmbed = await new Discord.RichEmbed()
     .setImage(target.displayAvatarURL)
     .setColor(message.guild.member(message.author).highestRole.color || "#FF0000");
-
     message.channel.send(avatarEmbed);
 }
 
