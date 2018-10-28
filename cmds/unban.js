@@ -7,6 +7,9 @@ module.exports.run = async(bot, message, args) => {
     }
     if(!args[0]) return message.channel.send(bot.errors.paramMissing);
 
+    let reason = args.slice(1).join(" ");
+    if(!reason) reason = "None";
+
     let embed = await new Discord.RichEmbed()
     .setAuthor("User unbanned")
     .setColor(message.guild.member(message.author).highestRole.color || "#FF0000")
@@ -14,7 +17,7 @@ module.exports.run = async(bot, message, args) => {
     .setTimestamp();
 
     try {
-        await message.guild.unban(args[0]);
+        await message.guild.unban(args[0], `${reason}`);
         return await message.channel.send(embed);
     } catch(e) {
         return await message.channel.send("Cannot unban user due to invalid ID");
